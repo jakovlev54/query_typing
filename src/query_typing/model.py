@@ -9,7 +9,7 @@ class EmployeeModel(ModelBase):
     name: str
 
 
-class EmployeeQuery(QueryBase):
+class EmployeeQuery(QueryBase[EmployeeModel]):
     pass
 
 
@@ -19,5 +19,5 @@ class DepartmentModel(ModelBase):
     name: str
 
 
-class DepartmentQuery(QueryBase):
+class DepartmentQuery(QueryBase[DepartmentModel]):
     pass
